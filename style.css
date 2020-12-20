@@ -1,0 +1,89 @@
+
+/* FONTS */
+
+/* minecraftitalic */
+@font-face {
+    font-family: 'minecraftitalic';
+    src: url('https://cdn.glitch.com/78cba1e7-4dcf-4b1e-b961-b3dfa833044d%2Fminecraftitalic-r8mo-webfont.woff2?v=1596695263329') format('woff2'),
+         url('https://cdn.glitch.com/78cba1e7-4dcf-4b1e-b961-b3dfa833044d%2Fminecraftitalic-r8mo-webfont.woff?v=1596695262930') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* minecraftregular */
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('https://cdn.glitch.com/78cba1e7-4dcf-4b1e-b961-b3dfa833044d%2Fminecraftregular-bmg3-webfont.woff2?v=1596695263474') format('woff2'),
+         url('https://cdn.glitch.com/78cba1e7-4dcf-4b1e-b961-b3dfa833044d%2Fminecraftregular-bmg3-webfont.woff?v=1596695263414') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* END OF FONTS */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: black;
+}
+
+h1 {
+  color: #dbdbdb;
+  display: inline-block
+}
+
+hr{
+  color:grey;
+}
+
+.title{
+  margin-left:1%;
+  
+}
+
+.header{
+  white-space: nowrap;
+  overflow-x: auto;
+  border: 0;
+}
+
+.footer{
+  color: white;
+  text-align:center;
+  margin: auto;
+  width: 95%;
+  position: fixed;
+  bottom: 10px;
+}
+
+#splash{
+  font-family: minecraftregular;
+  color: #FFFF00;
+  text-shadow: 4px 4px #3F3F00;
+  display: inline-block;
+  float: right;
+  margin-right:2%;
+  animation-name: splashAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  transition: width 0.75s;
+  transition-timing-function: cubic-bezier(0,0,1,1);
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes splashAnimation {
+  0% {
+    transform: scale(1.0);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
