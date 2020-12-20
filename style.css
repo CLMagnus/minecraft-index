@@ -38,13 +38,18 @@ hr{
   color:grey;
 }
 
-#header{
+.title{
+  margin-left:1%;
+  
+}
+
+.header{
   white-space: nowrap;
   overflow-x: auto;
   border: 0;
 }
 
-#footer{
+.footer{
   color: white;
   text-align:center;
   margin: auto;
@@ -53,13 +58,13 @@ hr{
   bottom: 10px;
 }
 
-.splash{
+#splash{
   font-family: minecraftregular;
   color: #FFFF00;
   text-shadow: 4px 4px #3F3F00;
   display: inline-block;
   float: right;
-  margin:auto;
+  margin-right:2%;
   animation-name: splashAnimation;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
